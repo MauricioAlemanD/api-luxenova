@@ -8,7 +8,6 @@ CORS(app)
 
 # Configura la base de datos y la sesión
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://admin:O-nt6051{fv@proyectoluxenova.cfsgec4e46so.us-east-1.rds.amazonaws.com/luxenova'
-
 app.config['SECRET_KEY'] = 'your_secret_key'  # Clave secreta para la sesión, cámbiala en producción
 app.config['SESSION_TYPE'] = 'filesystem'  # Almacena las sesiones en el sistema de archivos local
 
