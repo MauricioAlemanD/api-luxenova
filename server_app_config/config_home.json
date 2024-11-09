@@ -1,0 +1,68 @@
+{
+  "section-1": [
+    {
+      "id": 1,
+      "image": "assets/img/home/home1.jpg",
+      "highlightText": "NUEVOS SABORES",
+      "leadText": "AEROSOLES TROPICALESsss"
+    }
+  ],
+  "section-2": [
+    {
+      "productId": 1,
+      "productName": "Producto 1",
+      "productDescription": "Descripción breve del producto 1",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-1.jpg"
+    },
+    {
+      "productId": 2,
+      "productName": "Producto 2s",
+      "productDescription": "Descripción breve del producto 2",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-2.jpg"
+    },
+    {
+      "productId": 3,
+      "productName": "Producto 3",
+      "productDescription": "Descripción breve del producto 3",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-3.jpg"
+    },
+    {
+      "productId": 4,
+      "productName": "Producto 4",
+      "productDescription": "Descripción breve del producto 4",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-4.jpg"
+    },
+    {
+      "productId": 5,
+      "productName": "Producto 5",
+      "productDescription": "Descripción breve del producto 5",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-5.jpg"
+    },
+    {
+      "productId": 6,
+      "productName": "Producto 6",
+      "productDescription": "Descripción breve del producto 6",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-6.jpg"
+    },
+    {
+      "productId": 7,
+      "productName": "Producto 7",
+      "productDescription": "Descripción breve del producto 7",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-7.jpg"
+    },
+    {
+      "productId": 8,
+      "productName": "Producto 8",
+      "productDescription": "Descripción breve del producto 8",
+      "productPrice": "$20.00",
+      "productIMG": "assets/img/products/producto-8.jpg"
+    }
+  ]
+}

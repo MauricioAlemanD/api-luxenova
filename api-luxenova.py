@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify, session
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from flask_session import Session  # Importa flask-session para manejo de sesiones
+import json
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -79,6 +81,30 @@ def protected():
         return jsonify({'message': 'This is a protected route', 'user': session['email'], 'role': session['role']}), 200
     else:
         return jsonify({'message': 'Unauthorized access'}), 401
+
+
+@app.route('/home-section', methods=['GET'])
+def get_products():
+    # Ruta completa del archivo JSON
+    json_path = os.path.join(os.path.dirname(__file__), 'server_app_config/config_home.json')
+
+    # Lee el archivo JSON
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # Obtener el parámetro de sección de la URL (opcional)
+    section = request.args.get('section')  # Cambiado a 'section'
+
+    # Devolver solo la sección solicitada o todos los datos
+    if section:
+        section_data = data.get(section)
+        if section_data is None:
+            return jsonify({'message': 'Section not found'}), 404
+        return jsonify(section_data), 200
+    else:
+        return jsonify(data), 200
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
